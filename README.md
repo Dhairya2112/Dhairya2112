@@ -1,16 +1,73 @@
-## Hi there 👋
+## 👋 Hi, I’m Dhairya
 
-<!--
-**Dhairya2112/Dhairya2112** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+🎓 **Computer Science Engineering Student**  
+📍 **Semester 3 | L.J. University**  
+💻 Aspiring Software Engineer | Backend & Full-Stack Developer  
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 🚀 About Me
+- 🌱 Currently learning **Java, Python & Full-Stack Development**
+- 🧠 Interested in **Backend Systems, FinTech & AI-based Applications**
+- 🛠️ I enjoy building **real-world projects** to strengthen core CS concepts
+- 🎯 Goal: Become an **industry-ready software engineer**
+
+---
+
+### 🧑‍💻 Tech Stack
+
+**Programming Languages**
+- Java  
+- Python  
+- JavaScript  
+
+**Full Stack Development (FSD)**
+- HTML  
+- CSS  
+- Bootstrap  
+- JavaScript  
+
+**Backend Framework**
+- Flask (Python)
+
+**Database & DBMS**
+- PostgreSQL  
+- MySQL  
+- XAMPP  
+
+**Version Control & Tools**
+- Git  
+- GitHub  
+- VS Code  
+
+---
+
+### 📌 Projects
+
+- 🏨 **Hotel Management System**  
+  *Java | DBMS | PostgreSQL (XAMPP) | Data Structures & Algorithms*  
+  - Designed and implemented core hotel operations  
+  - Applied **DSA concepts** for efficient data handling  
+  - Integrated **database management** for persistent storage  
+
+- 📊 **Financial Analyzer**  
+  *Python | Full Stack Development | Flask | DBMS*  
+  - Built a web-based financial analysis system  
+  - Implemented **Flask backend** with database integration  
+  - Focused on **data processing and visualization logic**
+
+---
+
+### 🌐 Connect With Me
+- 🐙 **GitHub:** https://github.com/Dhairya2112  
+- 📧 **Email:** davedhairya21@gmail.com  
+- 📸 **Instagram:** https://instagram.com/dhairya._.2112  
+
+---
+
+### 📊 GitHub Stats
+![Dhairya's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Dhairya2112&show_icons=true&theme=tokyonight)
+
+---
+
+⭐ *If you like my work, feel free to star my repositories!*
