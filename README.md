@@ -1,7 +1,7 @@
 ## 👋 Hi, I’m Dhairya
 
 🎓 **Computer Science Engineering Student**  
-📍 **Semester 3 | L.J. University**  
+📍 **Semester 4 | L.J. University**  
 💻 Aspiring Software Engineer | Backend & Full-Stack Developer  
 
 ---
