@@ -1,4 +1,4 @@
-## 👋 Hi, I’m Dhairya
+## 👋 Hi, I’m Dhairya Dave
 
 🎓 **Computer Science Engineering Student**  
 📍 **Semester 4 | L.J. University**  
