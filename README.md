@@ -8,7 +8,7 @@
 
 ### 🚀 About Me
 - 🌱 Currently learning **Java, Python & Full-Stack Development**
-- 🧠 Interested in **Backend Systems, FinTech & AI-based Applications**
+- 🧠 Interested in **Backend Systems, FinTech & AIMl-based Applications**
 - 🛠️ I enjoy building **real-world projects** to strengthen core CS concepts
 - 🎯 Goal: Become an **industry-ready software engineer**
 
