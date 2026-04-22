@@ -50,7 +50,7 @@
   - Applied **DSA concepts** for efficient data handling  
   - Integrated **database management** for persistent storage  
 
-- 📊 **Financial Analyzer**  
+- 📊 **Finvest(Financial Analyzer)**  
   *Python | Full Stack Development | Flask | DBMS*  
   - Built a web-based financial analysis system  
   - Implemented **Flask backend** with database integration  
