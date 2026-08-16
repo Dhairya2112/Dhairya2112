@@ -1,7 +1,7 @@
 ## 👋 Hi, I’m Dhairya Dave
 
 🎓 **Computer Science Engineering Student**  
-📍 **Semester 4 | L.J. University**  
+📍 **Semester 5 | L.J. University**  
 💻 Aspiring Software Engineer | Backend & Full-Stack Developer  
 
 ---
