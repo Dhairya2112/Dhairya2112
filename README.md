@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1E0B33,50:6D28D9,100:A855F7&height=250&section=header&text=Dhairya%20Dave&fontSize=54&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=AI%20%2F%20ML%20Engineer%20%E2%80%94%20Backend-Focused&descAlignY=55&descSize=18"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1E0B33,50:6D28D9,100:A855F7&height=250&section=header&text=Dhairya%20Dave&fontSize=54&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=AI%20%2F%20ML%20Engineer%20%E2%80%94%20Backend-Focused&descAlignY=55&descSize=18"/>
 
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=800&color=A855F7&center=true&vCenter=true&width=650&lines=Building+local-first+AI+automation+systems;LangGraph+%2B+ReAct+agents;Python+%7C+PyTorch+%7C+Django+%7C+Flask;CSE+%2740+Student+%40+L.J.+University" alt="Typing SVG" />
-  </a>
+<a href="https://git.io/typing-svg">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=800&color=A855F7&center=true&vCenter=true&width=650&lines=Building+local-first+AI+automation+systems;Full-Stack+Architectures+%7C+Flask+%26+Java;CSE+%2740+Student+%40+L.J.+University;Building+Setu+%26+FinVest" alt="Typing SVG" />
+</a>
 </div>
 
 <br/>
@@ -14,14 +14,14 @@
 <td width="55%" valign="top">
 <h2>👨‍💻 Who Am I</h2>
 <blockquote>
-<b>AI / ML Engineer</b><br/>
-Focusing on backend systems, local-first AI, and multi-domain agents.
+<b>Software & AI Engineer</b><br/>
+Focusing on robust backend systems, applied algorithms, and multi-domain agents.
 </blockquote>
 <ul>
 <li>🎓 <b>Education:</b> B.Tech CSE, L.J. University (Class of '28)</li>
 <li>📍 <b>Location:</b> Ahmedabad, Gujarat, IN</li>
-<li>🏗️ <b>Building:</b> Local AI OS architectures & Full-stack applications</li>
-<li>💡 <b>Interests:</b> Self-healing agents, Classical ML, Deep Learning</li>
+<li>🏗️ <b>Building:</b> Local AI OS architectures & Full-stack financial platforms</li>
+<li>💡 <b>Interests:</b> Self-healing agents, Data Structures & Algorithms, Relational DBs</li>
 </ul>
 <p>
 <a href="https://www.linkedin.com/in/dhairya-dave-077773340/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
@@ -31,7 +31,7 @@ Focusing on backend systems, local-first AI, and multi-domain agents.
 <td width="45%" valign="top" align="center">
 <h2>⚙️ Core Stack</h2>
 <br/>
-<img src="https://skillicons.dev/icons?i=python,pytorch,django,flask,react,nodejs,js,postgres,mongodb,git&theme=dark&perline=5" />
+<img src="https://skillicons.dev/icons?i=python,java,pytorch,flask,django,react,js,mysql,postgres,git&theme=dark&perline=5" />
 </td>
 </tr>
 </table>
@@ -57,22 +57,12 @@ Focusing on backend systems, local-first AI, and multi-domain agents.
 <tr>
 <td width="50%" valign="top">
 <blockquote>
-<b>🧠 Agent Core</b><br/>
-LangGraph ReAct agent orchestrating 19 tools (15 OS-level + 4 Playwright automations).
-</blockquote>
-<blockquote>
-<b>🔁 Self-Healing Loop</b><br/>
-Terminal errors are caught, diagnosed, and retried autonomously.
+<b>🧠 Agent Core:</b> LangGraph ReAct agent orchestrating 19 tools (15 OS-level + 4 Playwright automations).
 </blockquote>
 </td>
 <td width="50%" valign="top">
 <blockquote>
-<b>🎙️ Custom STT</b><br/>
-faster-whisper (large-v3-turbo) + VAD + phonetic correction.
-</blockquote>
-<blockquote>
-<b>⚡ LLM Fallback</b><br/>
-3-Layer pipeline: Llama-3.3-70B (NIM) → Gemma-4-31B → Gemini-2.5-Flash.
+<b>⚡ LLM Fallback:</b> 3-Layer pipeline (Llama-3.3-70B → Gemma-4-31B → Gemini-2.5-Flash) with custom STT.
 </blockquote>
 </td>
 </tr>
@@ -83,24 +73,48 @@ faster-whisper (large-v3-turbo) + VAD + phonetic correction.
 <!-- Project 2: FinVest -->
 <h3 align="center">2. FinVest Platform</h3>
 <p align="center">
-<kbd>&nbsp;Financial Tech&nbsp;</kbd> 
-<kbd>&nbsp;Full-Stack Architecture&nbsp;</kbd> 
-<kbd>&nbsp;Data Visualization&nbsp;</kbd>
+<kbd>&nbsp;Flask 2.3.2&nbsp;</kbd> 
+<kbd>&nbsp;MySQL 8.0+&nbsp;</kbd> 
+<kbd>&nbsp;Glassmorphism UI&nbsp;</kbd>
 </p>
-<p align="center"><i>A robust financial application engineered for data analysis and visualization.</i></p>
+<p align="center"><i>A comprehensive financial management and portfolio tracking platform with real-time analytics.</i></p>
 
 <table width="100%">
 <tr>
 <td width="50%" valign="top">
 <blockquote>
-<b>⚙️ Backend Engine</b><br/>
-Powered by a high-performance Python and Flask architecture.
+<b>💰 Portfolio & Budgets:</b> Track investments (stocks, crypto, real estate) with real-time P&L. Set isolated budgets for special events and monthly category limits.
 </blockquote>
 </td>
 <td width="50%" valign="top">
 <blockquote>
-<b>📊 Data Pipeline</b><br/>
-Leverages PostgreSQL for persistent storage and Matplotlib for dynamic charting and graphing.
+<b>📊 Advanced Analytics:</b> Interactive Matplotlib & NumPy data visualizations, portfolio growth charts, net cash flow tracking, and dynamic risk analysis.
+</blockquote>
+</td>
+</tr>
+</table>
+
+<br/>
+
+<!-- Project 3: Hotel Management System -->
+<h3 align="center">3. Hotel Management System</h3>
+<p align="center">
+<kbd>&nbsp;Core Java&nbsp;</kbd> 
+<kbd>&nbsp;PostgreSQL & JDBC&nbsp;</kbd> 
+<kbd>&nbsp;Applied DSA&nbsp;</kbd>
+</p>
+<p align="center"><i>An OOP-driven hospitality platform managing records, room allocations, and billing.</i></p>
+
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+<blockquote>
+<b>🏨 System Operations:</b> End-to-end guest registration, real-time room availability handling, and automated check-in/out billing processes.
+</blockquote>
+</td>
+<td width="50%" valign="top">
+<blockquote>
+<b>🧠 DSA & Database:</b> Implements sorting/searching algorithms over ArrayLists. Backed by a relational PostgreSQL schema utilizing primary constraints and routines.
 </blockquote>
 </td>
 </tr>
@@ -129,7 +143,7 @@ Leverages PostgreSQL for persistent storage and Matplotlib for dynamic charting 
 <br/>
 
 <div align="center">
-<i>Building in public, targeting AI/ML engineering roles.<br/>Always down to talk agents, local-first infra, or a Clash Royale meta debate. 👑</i>
+<i>Building in public, targeting Software & AI engineering roles.<br/>Always down to talk system architecture, relational databases, or a Clash Royale meta debate. 👑</i>
 </div>
 
 <div align="center">
