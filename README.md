@@ -14,7 +14,21 @@
 
 <br/>
 
-> **Thought 1 —** I don't know this user yet. I should pull core identity before anything else.
+<details>
+<summary>⚡ &nbsp;<b>fast_path()</b> — skip the trace, get the summary</summary>
+<br/>
+
+- **Target role:** AI Engineer / ML Engineer — open to internships
+- **Education:** B.Tech CSE, L.J. University · Sem 5 · Class of 2028 · SPI 8.83
+- **Shipped:** a self-healing local AI agent (19 tools, voice I/O), a full-stack fintech tracker, a relational hotel-ops system
+- **Core stack:** Python · Django/DRF · React · PostgreSQL/MySQL · LangChain/LangGraph
+- **Reach:** [LinkedIn](https://www.linkedin.com/in/dhairya-dave-077773340/) · [GitHub](https://github.com/Dhairya2112)
+
+</details>
+
+<br/>
+
+> **Thought 1 —** Don't know this user yet. Pull core identity before anything else.
 > **Action —** `get_identity(user="Dhairya2112")`
 > **Observation:**
 
@@ -29,19 +43,25 @@ build_style : industry-grade > assignment-grade
 
 <br/>
 
-> **Thought 2 —** Identity alone doesn't say what he can actually build. Need his real capability set, not a buzzword list.
-> **Action —** `get_capabilities(verified_only=true)`
+> **Thought 2 —** Need his real capability set — verified against what he's actually shipped, not a keyword dump. Excluding anything used once incidentally.
+> **Action —** `get_capabilities(mode="verified_only")`
 > **Observation:**
 
-| Layer | Confirmed |
-|---|---|
-| `languages` | Python · Java · JavaScript (ES6+) · C++ · SQL |
-| `backend` | Django · DRF · Flask · JDBC |
-| `data` | PostgreSQL · MySQL · MongoDB |
-| `ml_ai` | PyTorch · scikit-learn · LangChain · LangGraph |
-| `analysis` | pandas · NumPy · Matplotlib · Seaborn · NetworkX |
-| `automation` | pdfplumber · reportlab · pypdf |
-| `foundations` | DSA · OOP · Relational Schema Design |
+**🟣 Production-tested** — used to ship real, working systems
+<br/>
+<img src="https://skillicons.dev/icons?i=python,java,js,django,flask,react,postgres,mysql,mongodb&theme=dark"/>
+
+`SQL` · `Django REST Framework` · `JDBC`
+
+**🔵 Applied — AI/ML stack**
+<br/>
+<img src="https://skillicons.dev/icons?i=pytorch,git&theme=dark"/>
+
+`LangChain` · `LangGraph` · `scikit-learn` · `pandas` · `NumPy` · `Matplotlib` · `Seaborn` · `NetworkX`
+
+**⚪ Foundations**
+
+`DSA` · `OOP` · `Relational DB Design` · `Git/GitHub`
 
 <br/>
 
@@ -87,17 +107,16 @@ build_style : industry-grade > assignment-grade
 
 <br/>
 
-> **Thought 4 —** Should back this with live metrics. Pulling from GitHub directly — but the platform's raw "commits" stat counts cross-branch events, not contribution-graph totals, so I'm excluding it to avoid reporting a misleading number.
-> **Action —** `fetch_github_metrics(hide=["commits"])`
+> **Thought 4 —** Third-party metrics services count cross-branch events, not real contribution totals — that's how a 153-day profile ends up reporting 800+. Skipping anything numeric that can't be trusted. Language breadth and earned achievements are safe signals.
+> **Action —** `fetch_github_metrics(mode="safe", exclude=["commits", "contributions"])`
 > **Observation:**
 
 <div align="center">
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=Dhairya2112&show_icons=true&hide=commits&theme=radical&hide_border=true&bg_color=0D0417&title_color=A855F7&icon_color=A855F7&text_color=c9d1d9"/>
-<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Dhairya2112&layout=compact&theme=radical&hide_border=true&bg_color=0D0417&title_color=A855F7&text_color=c9d1d9"/>
+<img width="60%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Dhairya2112&layout=compact&theme=radical&hide_border=true&bg_color=0D0417&title_color=A855F7&text_color=c9d1d9"/>
 </div>
 
 <div align="center">
-<img width="70%" src="https://github-readme-streak-stats.herokuapp.com/?user=Dhairya2112&theme=highcontrast&hide_border=true&background=0D0417&stroke=A855F7&ring=A855F7&fire=A855F7&currStreakLabel=A855F7"/>
+<img src="https://github-profile-trophy.vercel.app/?username=Dhairya2112&theme=radical&no-frame=true&no-bg=true&row=1&column=6&margin-w=8"/>
 </div>
 
 <br/>
