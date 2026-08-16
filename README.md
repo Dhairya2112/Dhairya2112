@@ -19,7 +19,7 @@
 <br/>
 
 - **Target role:** AI Engineer / ML Engineer — open to internships
-- **Education:** B.Tech CSE, L.J. University · Sem 5 · Class of 2028 · SPI 8.83
+- **Education:** B.Tech CSE, L.J. University · Sem 5 · Class of 2028
 - **Shipped:** a self-healing local AI agent (19 tools, voice I/O), a full-stack fintech tracker, a relational hotel-ops system
 - **Core stack:** Python · Django/DRF · React · PostgreSQL/MySQL · LangChain/LangGraph
 - **Reach:** [LinkedIn](https://www.linkedin.com/in/dhairya-dave-077773340/) · [GitHub](https://github.com/Dhairya2112)
@@ -35,7 +35,7 @@
 ```yaml
 name        : Dhairya Dave Amitkumar
 role        : AI Engineer / ML Engineer (aspiring)
-education   : B.Tech CSE — L.J. University, Sem 5 (Class of 2028, SPI 8.83)
+education   : B.Tech CSE — L.J. University, Sem 5 (Class of 2028)
 location    : Ahmedabad, Gujarat, IN
 build_style : industry-grade > assignment-grade
               unique systems > templated projects
@@ -138,7 +138,4 @@ build_style : industry-grade > assignment-grade
 </a>
 
 <br/><br/>
-
-<sub>runtime idle · will resume on next incoming query · also accepts Clash Royale meta debates 👑</sub>
-
 </div>
