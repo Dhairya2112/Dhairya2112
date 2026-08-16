@@ -1,141 +1,125 @@
 <div align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1E0B33,50:6D28D9,100:A855F7&height=250&section=header&text=Dhairya%20Dave&fontSize=54&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Software%20%26%20AI%20Engineer&descAlignY=55&descSize=18"/>
+
 <a href="https://git.io/typing-svg">
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=3FB950&background=0D111700&center=true&vCenter=true&width=800&lines=%24+ssh+dhairya%40lj-university;%24+tail+-f+%2Fvar%2Flog%2Fai_agents.log;%24+systemctl+start+setu-workstation;%24+cat+finvest_portfolio.json;%24+Loading+developer_dashboard..." alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=20&duration=3000&pause=800&color=A855F7&center=true&vCenter=true&width=650&lines=Building+local-first+AI+automation+systems;Full-Stack+Architectures+%7C+Flask+%26+Java;CSE+%2740+Student+%40+L.J.+University;Architecting+Setu+%26+FinVest" alt="Typing SVG" />
 </a>
+<br/>
+<a href="https://www.linkedin.com/in/dhairya-dave-077773340/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<a href="https://github.com/Dhairya2112"><img src="https://img.shields.io/badge/GitHub-1E0B33?style=for-the-badge&logo=github&logoColor=A855F7"/></a>
 </div>
 
 <br/>
 
-<!-- ROW 1: USER & ENVIRONMENT -->
-<table width="100%" bgcolor="#0d1117" style="border: 1px solid #30363d; border-radius: 6px; border-collapse: collapse;">
+<!-- WINDOW 1: ABOUT & SYSTEM SPECS -->
+<table width="100%" cellspacing="0" cellpadding="0" style="border-collapse: collapse; border: 1px solid #30363d;">
 <tr>
-<!-- TERMINAL 1: WHOAMI -->
-<td width="60%" valign="top" style="border-right: 1px solid #30363d;">
-<div style="background-color: #161b22; border-bottom: 1px solid #30363d; padding: 4px 10px; font-family: monospace;">
-<span style="color: #ff7b72;">🔴</span> <span style="color: #d2a8ff;">🟡</span> <span style="color: #3fb950;">🟢</span> &nbsp;&nbsp;<span style="color: #8b949e;">bash -- dhairya_dave</span>
-</div>
-<div style="padding: 15px; font-family: monospace; color: #c9d1d9;">
-<span style="color: #58a6ff;">dhairya@workspace</span>:<span style="color: #3fb950;">~</span>$ whoami<br/>
-Name&nbsp;&nbsp;&nbsp;&nbsp;: Dhairya Dave<br/>
-Role&nbsp;&nbsp;&nbsp;&nbsp;: Software & AI Engineer<br/>
-Base&nbsp;&nbsp;&nbsp;&nbsp;: Ahmedabad, Gujarat, IN<br/>
-Edu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: B.Tech CSE @ L.J. University (Class of '28)<br/>
-<br/>
-<span style="color: #58a6ff;">dhairya@workspace</span>:<span style="color: #3fb950;">~</span>$ cat ~/.interests<br/>
-> Building self-healing agents<br/>
-> Architecting relational databases<br/>
-> Applied Data Structures & Algorithms<br/>
-<br/>
-<span style="color: #58a6ff;">dhairya@workspace</span>:<span style="color: #3fb950;">~</span>$ ./connect.sh<br/>
-[<a href="https://www.linkedin.com/in/dhairya-dave-077773340/" style="color: #58a6ff; text-decoration: none;">LinkedIn</a>] | [<a href="https://github.com/Dhairya2112" style="color: #58a6ff; text-decoration: none;">GitHub</a>]
-</div>
+<td bgcolor="#161b22" style="padding: 8px 12px; border-bottom: 1px solid #30363d;">
+🔴 🟡 🟢 &nbsp;&nbsp;<b style="color: #8b949e; font-family: sans-serif; font-size: 14px;">System_Preferences.app</b>
 </td>
-
-<!-- TERMINAL 2: SYSTEM STATS -->
-<td width="40%" valign="top">
-<div style="background-color: #161b22; border-bottom: 1px solid #30363d; padding: 4px 10px; font-family: monospace;">
-<span style="color: #8b949e;">~ htop / stack</span>
-</div>
-<div style="padding: 15px; font-family: monospace; color: #c9d1d9;">
-<span style="color: #3fb950;">System Load:</span> [||||||||||] 100%<br/><br/>
-<span style="color: #8b949e;"># Core Dependencies</span><br/>
-<img src="https://skillicons.dev/icons?i=python,java,pytorch,flask,django&theme=dark&perline=5" /><br/>
-<br/>
-<span style="color: #8b949e;"># Infrastructure & DBs</span><br/>
-<img src="https://skillicons.dev/icons?i=mysql,postgres,react,js,git&theme=dark&perline=5" />
-</div>
+</tr>
+<tr>
+<td style="padding: 20px;">
+<table width="100%">
+<tr>
+<td width="55%" valign="top">
+<h3>👤 User Profile</h3>
+<ul>
+<li><b>Role:</b> Software & AI Engineer</li>
+<li><b>Base:</b> Ahmedabad, Gujarat, IN</li>
+<li><b>Education:</b> B.Tech CSE, L.J. University (Class of '28)</li>
+<li><b>Focus:</b> Backend systems, Applied Algorithms, Relational DBs</li>
+</ul>
+</td>
+<td width="45%" valign="top" align="center">
+<h3>⚙️ Core Frameworks</h3>
+<img src="https://skillicons.dev/icons?i=python,java,pytorch,flask,django,react,js,mysql,postgres,git&theme=dark&perline=5" />
+</td>
+</tr>
+</table>
 </td>
 </tr>
 </table>
 
 <br/>
 
-<!-- ROW 2: PRIMARY AGENT (SETU) -->
-<table width="100%" bgcolor="#0d1117" style="border: 1px solid #30363d; border-radius: 6px; border-collapse: collapse;">
+<!-- WINDOW 2: PROJECT DASHBOARD -->
+<table width="100%" cellspacing="0" cellpadding="0" style="border-collapse: collapse; border: 1px solid #30363d;">
 <tr>
-<td valign="top">
-<div style="background-color: #161b22; border-bottom: 1px solid #30363d; padding: 4px 10px; font-family: monospace;">
-<span style="color: #8b949e;">~/projects/setu_workstation $ cat config.yaml</span>
-</div>
-<div style="padding: 15px; font-family: monospace; color: #c9d1d9;">
-<span style="color: #ff7b72;">project</span>: Setu Workstation<br/>
-<span style="color: #ff7b72;">type</span>:&nbsp;&nbsp;&nbsp;&nbsp;Local-First / LAN-Only AI OS<br/>
-<span style="color: #ff7b72;">status</span>:&nbsp;&nbsp;<span style="color: #3fb950;">Active [Running]</span><br/>
-<br/>
-<span style="color: #79c0ff;">architecture</span>:<br/>
-&nbsp;&nbsp;<span style="color: #d2a8ff;">agent_core</span>: ReAct + LangGraph orchestrating 19 tools (15 OS-level, 4 Playwright)<br/>
-&nbsp;&nbsp;<span style="color: #d2a8ff;">resilience</span>: Self-healing execution loop catches, diagnoses, and retries terminal errors<br/>
-&nbsp;&nbsp;<span style="color: #d2a8ff;">voice_pipe</span>: Custom STT (faster-whisper large-v3-turbo) + VAD + phonetic correction<br/>
-&nbsp;&nbsp;<span style="color: #d2a8ff;">llm_router</span>: 3-Layer pipeline (Llama-3.3-70B -> Gemma-4-31B -> Gemini-2.5-Flash)<br/>
-</div>
+<td bgcolor="#161b22" style="padding: 8px 12px; border-bottom: 1px solid #30363d;">
+🔴 🟡 🟢 &nbsp;&nbsp;<b style="color: #8b949e; font-family: sans-serif; font-size: 14px;">Project_Explorer.exe</b>
+</td>
+</tr>
+<tr>
+<td style="padding: 20px;">
+
+<!-- App Card: Setu -->
+<blockquote>
+<h3>🧠 Setu Workstation</h3>
+<p>
+<kbd>Local-First AI OS</kbd> <kbd>ReAct + LangGraph</kbd> <kbd>Llama-3.3-70B</kbd>
+</p>
+<p><i>A stateful ReAct agent orchestrating 19 integrated tools to control the host machine and browser.</i></p>
+<ul>
+<li><b>Self-Healing Loop:</b> Terminal errors are caught, diagnosed, and retried autonomously.</li>
+<li><b>Custom Pipeline:</b> Built with faster-whisper (large-v3-turbo) STT, VAD, and a 3-layer LLM fallback system.</li>
+</ul>
+</blockquote>
+
+<!-- App Card: FinVest -->
+<blockquote>
+<h3>💰 FinVest Platform</h3>
+<p>
+<kbd>Flask 2.3.2</kbd> <kbd>MySQL 8.0+</kbd> <kbd>Matplotlib / NumPy</kbd>
+</p>
+<p><i>A comprehensive financial management, event-based budgeting, and portfolio tracking platform.</i></p>
+<ul>
+<li><b>Portfolio & Budgets:</b> Track investments across assets with real-time P&L. Features isolated event budgets and category limits.</li>
+<li><b>Analytics Dashboard:</b> Modern Glassmorphism UI rendering dynamic charts, growth trends, and risk analysis.</li>
+</ul>
+</blockquote>
+
+<!-- App Card: Hotel Management -->
+<blockquote>
+<h3>🏨 Hotel Management System</h3>
+<p>
+<kbd>Core Java</kbd> <kbd>PostgreSQL</kbd> <kbd>JDBC</kbd> <kbd>Applied DSA</kbd>
+</p>
+<p><i>An OOP-driven hospitality platform managing records, live room allocations, and automated billing.</i></p>
+<ul>
+<li><b>Algorithmic Ops:</b> Utilizes custom sorting [O(n log n)] and searching algorithms over ArrayLists for real-time menu and guest operations.</li>
+<li><b>Database Architecture:</b> Relational PostgreSQL schema with strictly enforced constraints and SQL routines.</li>
+</ul>
+</blockquote>
+
 </td>
 </tr>
 </table>
 
 <br/>
 
-<!-- ROW 3: SPLIT VIEW PROJECTS -->
-<table width="100%" bgcolor="#0d1117" style="border: 1px solid #30363d; border-radius: 6px; border-collapse: collapse;">
+<!-- WINDOW 3: ACTIVITY MONITOR -->
+<table width="100%" cellspacing="0" cellpadding="0" style="border-collapse: collapse; border: 1px solid #30363d;">
 <tr>
-<!-- TERMINAL 3: FINVEST -->
-<td width="50%" valign="top" style="border-right: 1px solid #30363d;">
-<div style="background-color: #161b22; border-bottom: 1px solid #30363d; padding: 4px 10px; font-family: monospace;">
-<span style="color: #8b949e;">~/projects/finvest $ python manage.py runserver</span>
-</div>
-<div style="padding: 15px; font-family: monospace; color: #c9d1d9;">
-<span style="color: #3fb950;">Starting development server at http://127.0.0.1:5000/</span><br/><br/>
-<span style="color: #8b949e;">[INFO]</span> Initializing <span style="color: #58a6ff;">Flask 2.3.2</span> core...<br/>
-<span style="color: #8b949e;">[INFO]</span> Connecting to <span style="color: #58a6ff;">MySQL 8.0+</span>... OK<br/><br/>
-<span style="color: #ff7b72;">Modules Loaded:</span><br/>
-- <b>Auth:</b> Secure hashing & Session management<br/>
-- <b>Portfolio:</b> Multi-asset real-time P&L tracking<br/>
-- <b>Budgeting:</b> Event-based isolated budgets & limits<br/>
-- <b>Analytics:</b> Matplotlib / NumPy dynamic charts<br/>
-- <b>UI:</b> Responsive Glassmorphism design<br/>
-</div>
-</td>
-
-<!-- TERMINAL 4: HOTEL SYSTEM -->
-<td width="50%" valign="top">
-<div style="background-color: #161b22; border-bottom: 1px solid #30363d; padding: 4px 10px; font-family: monospace;">
-<span style="color: #8b949e;">~/projects/hotel_sys $ javac Main.java && java Main</span>
-</div>
-<div style="padding: 15px; font-family: monospace; color: #c9d1d9;">
-<span style="color: #3fb950;">[JDBC]</span> PostgreSQL Connection Established.<br/><br/>
-<span style="color: #79c0ff;">Executing OOP Routines...</span><br/>
-> Guest registration: <span style="color: #3fb950;">ONLINE</span><br/>
-> Room allocation matrix: <span style="color: #3fb950;">SYNCED</span><br/><br/>
-<span style="color: #79c0ff;">Applying Data Structures...</span><br/>
-> Initializing ArrayLists for menu ops...<br/>
-> Sorting prices [O(n log n)]...<br/>
-> Searching queries [Active]...<br/><br/>
-<span style="color: #ff7b72;">System Ready. Waiting for input...</span>
-</div>
+<td bgcolor="#161b22" style="padding: 8px 12px; border-bottom: 1px solid #30363d;">
+🔴 🟡 🟢 &nbsp;&nbsp;<b style="color: #8b949e; font-family: sans-serif; font-size: 14px;">Activity_Monitor.app</b>
 </td>
 </tr>
-</table>
-
-<br/>
-
-<!-- ROW 4: GIT LOG (SNAKE) -->
-<table width="100%" bgcolor="#0d1117" style="border: 1px solid #30363d; border-radius: 6px; border-collapse: collapse;">
 <tr>
-<td valign="top">
-<div style="background-color: #161b22; border-bottom: 1px solid #30363d; padding: 4px 10px; font-family: monospace;">
-<span style="color: #8b949e;">~ $ git log --graph --oneline --all</span>
-</div>
-<div align="center" style="padding: 15px;">
+<td align="center" style="padding: 20px;">
 <picture>
 <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Dhairya2112/Dhairya2112/output/github-contribution-grid-snake-dark.svg">
 <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Dhairya2112/Dhairya2112/output/github-contribution-grid-snake.svg">
 <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/Dhairya2112/Dhairya2112/output/github-contribution-grid-snake.svg">
 </picture>
-</div>
 </td>
 </tr>
 </table>
 
 <br/>
-<div align="center" style="font-family: monospace; color: #8b949e;">
-/* Building in public. Always down to discuss system architecture, local-first infra, or Clash Royale metas. */
+
+<div align="center">
+<i>Building in public, targeting Software & AI engineering roles.<br/>Always down to talk system architecture, relational databases, or a Clash Royale meta debate. 👑</i>
+<br/><br/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:A855F7,100:1E0B33&height=100&section=footer"/>
 </div>
