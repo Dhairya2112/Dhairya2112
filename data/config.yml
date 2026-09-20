@@ -7,17 +7,18 @@ tz_label: IST
 
 hero:
   name: Dhairya Dave
-  status: open to internships & engineering roles  # line next to the amber dot
-  role: Software & AI Systems Engineer              # amber line under the name
+  status: open to internships & roles
+  role: Software & AI Systems Engineer
+  location: Ahmedabad, IN • B.Tech CSE '28
   pitch:
-    - "Architecting resilient backends and local-first agentic systems."
-    - "Building Setu (voice OS agent) and SignalScope (dual-brain forensics)."
-    - "Specialized in async Python, distributed pipelines, and PyTorch."
-  strip_title: core engineering stack
-  strip:
-    - {label: "ai & agents",    value: "LangGraph • PyTorch"}
-    - {label: "async backend",  value: "Django 6 • FastAPI"}
-    - {label: "cloud & data",   value: "Postgres • AWS EC2"}
+    - "Engineering high-throughput backend services, autonomous agent"
+    - "pipelines, and applied computer vision. Dedicated to production"
+    - "reliability, distributed scalability, and low-latency API design."
+  stack_grid:
+    - { category: "AI & AGENTIC SYSTEMS", items: "PyTorch • LangGraph • Whisper" }
+    - { category: "DISTRIBUTED BACKEND", items: "Django 6 • FastAPI • Daphne" }
+    - { category: "DATA & PERSISTENCE", items: "PostgreSQL • MongoDB • Redis" }
+    - { category: "CLOUD & INFRASTRUCTURE", items: "AWS EC2 • Docker • Linux" }
 
 portrait:
   file: source/portrait.png   # cut-out PNG (transparent background); a plain JPG also works
