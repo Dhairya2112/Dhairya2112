@@ -1,90 +1,99 @@
-<img src="https://raw.githubusercontent.com/Dhairya2112/Dhairya2112/assets/hero.svg" alt="Dhairya Dave, AI/ML and backend engineering, open to internships. I train ML models on raw, messy data and build the Django backends that serve them. Right now I'm building Setu, a local-first agent that runs on a LAN. Setu runtime values: VAD threshold 0.35, STT logprob -1.50, 13 agent tools, 3 LLM fallback layers." width="840">
+<img src="https://raw.githubusercontent.com/Dhairya2112/Dhairya2112/assets/hero.svg" alt="Dhairya Dave, Software & AI Systems Engineer. Architecting resilient backends and local-first agentic systems. Core stack: LangGraph, PyTorch, Django 6, FastAPI, Postgres, AWS." width="840">
 
-Third-year CSE student at L.J. University, Ahmedabad, graduating 2028.
+Third-year CSE student at L.J. University, Ahmedabad (Class of '28) • Targeting AI & Backend Engineering Roles
 
-<sub>[systems](#systems)&emsp;[telemetry](#telemetry)&emsp;[signal](#signal)&emsp;[contact](#contact)</sub>
+<sub>[systems](#systems)&emsp;[deployments](#deployments)&emsp;[telemetry](#telemetry)&emsp;[stack](#stack)&emsp;[contact](#contact)</sub>
 
 ## systems
 
 <details open>
-<summary><b>setu-workstation</b>&emsp;local-first, LAN-only AI automation agent</summary>
+<summary><b>setu-workstation</b>&emsp;local-first, LAN-only autonomous voice operating system</summary>
 
 <br>
 
 ```text
-mic ─► Silero VAD ─► faster-whisper large-v3-turbo (int8, CPU)
-                     English + Hindi/Hinglish, wake word "setu"
-                                     │
-        tier 0   regex router                <0.3 s   greetings, thanks, farewells
-        tier 2   LangGraph ReAct agent       2-8 s    13 tools + Playwright browser sub-agent
-                                     │
-        LLM chain   Gemini 10 s ─► OpenRouter 6 s ─► NVIDIA NIM 5 s
-                                     │
-Kokoro TTS, local ─► base64 WAV chunks, streamed sentence by sentence
-                                     │
-Django 6 + Channels (Daphne, JWT WebSocket) ─► React 19 and Three.js client
+mic ──► Silero VAD (0.35 threshold) ──► faster-whisper large-v3-turbo (int8, CPU)
+                                        English + Hindi/Hinglish, wake word "setu"
+                                                        │
+            tier 0   pre-compiled regex router          <0.3 s   greetings, status, immediate controls
+            tier 2   LangGraph ReAct agent              2-8 s    14 sandboxed tools + Playwright sub-agent
+                                                        │
+            LLM resilience   Gemini 3.1 Flash Lite 10 s ──► OpenRouter Gemma 2 27B 6 s ──► NVIDIA NIM Llama 3.1 8B 5 s
+                                                        │
+Kokoro 0.7 TTS (neural, local) ──► base64 WAV chunks, streamed sentence-by-sentence
+                                                        │
+Django 6 + Channels (Daphne ASGI, JWT WebSocket) ──► React 19 + Zustand + Three.js NeuralMesh client
 ```
 
-- Runs on the local network only. Three permission levels gate the tools, and a safety layer blocks destructive shell patterns and restricts file paths.
-- Tokens stream to the client, the desktop can cancel a reply mid-stream, and several devices stay in sync. A phone disconnecting does not cancel a running task.
-- Speech settings: VAD threshold 0.35, minimum speech 200 ms, minimum silence 400 ms, logprob gate -1.50, beam size 5.
-
-<!-- add the repository link here once it is public -->
-
-</details>
-
-<details>
-<summary><b>finvest-v2</b>&emsp;personal finance platform, deployed</summary>
-
-<br>
-
-Next.js 16 and React 19 front end, Flask and Supabase (PostgreSQL) back end. Google OAuth 2.0 sign-in, a receipt splitter that reads photos with Gemini Vision OCR, live multi-currency exchange rates, and PWA support.
-
-[source](https://github.com/Dhairya2112/FinVest-Financial-Buddy)&emsp;[live](https://finvest-financial-buddy.vercel.app)
+- **Bounded Checkpoint Memory:** Custom `BoundedMemorySaver` caps thread checkpoint history at 50 to prevent memory exhaustion, coupled with autonomous checkpoint healing to repair dangling tool states.
+- **3-Layer Provider Fallback:** Exponential back-off via Tenacity across Gemini $\rightarrow$ OpenRouter $\rightarrow$ NVIDIA NIM to survive upstream rate limits and outages without user disruption.
+- **Sub-300ms Fast Router:** Pre-compiled regex router (`FastResponseRouter`) handles greetings, time queries, and status commands instantly, completely bypassing the cloud LLM pipeline.
+- **14 Sandboxed OS Tools:** Three privilege tiers gate host access (Level 1 read-only, Level 2 permission-gated, Level 3 administrative). Features native Windows WASAPI master volume control, process lifecycle management, filesystem search, and sandboxed PowerShell execution.
+- **100% Local Audio Engine:** Raw microphone data never leaves the host. Silero VAD (0.35 threshold, 200 ms min speech, 400 ms min silence) + `faster-whisper` (int8 CPU) + `Kokoro 0.7` neural TTS streaming sentence chunks over WebSockets.
+- **Data Persistence & Client:** MongoDB Community Server (`setu_db`) stores conversation history, settings, and reminders. Reactive React 19 client with Three.js `NeuralMesh` background visualizer and Web Audio API stream visualizer.
 
 </details>
 
 <details>
-<summary><b>signalscope</b>&emsp;forensic detector for AI-generated images and deepfakes</summary>
+<summary><b>signalscope</b>&emsp;multi-modal forensic detection laboratory for AI-generated media & deepfakes</summary>
 
 <br>
 
-Two detectors run side by side and a consensus gate makes the call. One uses CLIP ViT-B/16 to catch semantic and visual inconsistencies. The other reads camera physics: 2D-FFT azimuthal power decay and SRM sensor-noise residuals. The gate suppresses false positives from smartphone portrait mode, night mode and beauty filters, and every verdict carries a calibrated confidence tier. FastAPI back end, React 18 dashboard.
+A full-stack forensic inspection laboratory built to detect AI-generated images, deepfakes, and adversarial face-swaps using a consensus between visual semantics and camera physics.
 
-Built for Smart India Hackathon 2026. 8th of 108 teams in the college round.
+- **Dual-Brain Consensus Architecture:**
+  - *Brain 1 (Visual Semantic AI):* CLIP ViT-B/16 transformer extracts semantic inconsistencies, geometric warping, and synthetic texture artifacts.
+  - *Brain 2 (Camera Physics AI):* 2D Fast Fourier Transform (FFT) azimuthal power decay profile (detecting GAN/Diffusion checkerboard upsampling) coupled with Spatial Rich Model (SRM) sensor noise residuals & PRNU (Photo-Response Non-Uniformity) sensor grain verification.
+- **Smartphone Computational Shield:** Autonomous gating model that isolates and suppresses false positives induced by modern smartphone computational photography (portrait mode blur, night mode, aggressive multi-frame HDR).
+- **Four-Panel Forensic Laboratory:** LayerCAM visual saliency heatmaps with dynamic alpha blend slider, 2D-FFT azimuthal profile plots, generator family attribution (Midjourney, Stable Diffusion, DALL-E, StyleGAN), and EXIF camera provenance extraction.
+- **Natural Language Diagnostics:** Real-time dynamic diagnostic summaries generated via the summary engine for non-technical evaluators and court admissibility.
+- **Production & Observability:** FastAPI backend, React 18 + Vite dashboard, Docker Compose multi-container deployment, Prometheus latency telemetry, and a 42-case automated test suite (`pytest`).
+- **Recognition:** Smart India Hackathon (SIH 2026) Institutional Finalist — ranked 8th of 108 teams in college evaluation.
 
-<!-- add the repository link here -->
+[live demo (AWS EC2)](http://18.212.83.78:8000)&emsp;[source](https://github.com/Dhairya2112/SignalScope)
 
 </details>
 
 <details>
-<summary><b>archive</b>&emsp;earlier work</summary>
+<summary><b>finvest-v2</b>&emsp;personal finance platform, portfolio tracker & vision receipt splitter</summary>
 
 <br>
 
-Hotel and cafe management system in Java, PostgreSQL and JDBC, with hand-written sorting and searching algorithms.
+Full-stack personal finance platform featuring isolated event-based budgeting, multi-asset portfolio tracking, and automated receipt itemization.
+
+- **Architecture:** Next.js 16 + React 19 front end with dark glassmorphism design system; Flask backend backed by Supabase (PostgreSQL) with row-level security.
+- **Vision OCR Splitter:** Leverages Gemini Vision OCR to scan, parse, and itemize physical paper receipts directly into category ledger entries.
+- **Live Financial Data:** Real-time multi-currency exchange rate feeds and multi-asset P&L analytics with interactive charts.
+- **Authentication & Delivery:** Google OAuth 2.0 authentication and Progressive Web App (PWA) offline support.
+
+[live](https://finvest-financial-buddy.vercel.app)&emsp;[source](https://github.com/Dhairya2112/FinVest-Financial-Buddy)
 
 </details>
 
 <details>
-<summary><b>stack</b>&emsp;what I use, and what I am still learning</summary>
+<summary><b>archive</b>&emsp;earlier systems work</summary>
 
 <br>
 
-```text
-languages  Python, JavaScript, SQL, Java
-back end   Django, DRF, Flask, FastAPI, Express
-front end  React, Next.js, Vite, Tailwind CSS
-ml         PyTorch, scikit-learn, pandas, NumPy, LangChain, LangGraph
-data       PostgreSQL, MySQL, MongoDB, Supabase
-learning   Docker, AWS, GCP
-```
+Hotel and cafe management system engineered in Core Java, PostgreSQL, and JDBC, implementing custom $O(n \log n)$ sorting and searching algorithms over dynamic data structures for real-time room allocations, menu operations, and automated billing.
 
 </details>
+
+## deployments
+
+Live production deployments and active systems engineered by Dhairya Dave:
+
+| System | Architecture / Focus | Primary Stack | Environment | Status | Links |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **SignalScope** | Dual-Brain Forensic Vision (CLIP + 2D-FFT + SRM) | FastAPI • PyTorch • React 18 • Docker | AWS EC2 (US-East) | `● Live Demo` | [Live App](http://18.212.83.78:8000) • [Code](https://github.com/Dhairya2112/SignalScope) |
+| **FinVest** | Automated Ledger & Vision OCR Expense Splitter | Flask • Next.js 16 • Supabase • Postgres | Vercel Serverless | `● Live Production` | [Live App](https://finvest-financial-buddy.vercel.app) • [Code](https://github.com/Dhairya2112/FinVest-Financial-Buddy) |
+| **Setu Workstation** | Local-First Autonomous Voice OS Agent | Django 6 Channels • LangGraph • Whisper | Local-First Host (LAN) | `○ Workstation Active` | [Architecture](#systems) |
 
 ## telemetry
 
-<img src="https://raw.githubusercontent.com/Dhairya2112/Dhairya2112/assets/telemetry.svg" alt="GitHub activity for the last 12 weeks, language share by bytes, and repository counts. Regenerated every six hours from the GitHub API." width="840">
+<a href="https://github.com/Dhairya2112?tab=repositories">
+  <img src="https://raw.githubusercontent.com/Dhairya2112/Dhairya2112/assets/telemetry.svg" alt="GitHub activity for the last 12 weeks, language share by bytes, and repository counts. Regenerated every six hours from the GitHub API." width="840">
+</a>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Dhairya2112/Dhairya2112/output/github-contribution-grid-snake-dark.svg">
@@ -92,16 +101,20 @@ learning   Docker, AWS, GCP
   <img alt="Contribution graph with a snake eating the commits" src="https://raw.githubusercontent.com/Dhairya2112/Dhairya2112/output/github-contribution-grid-snake-dark.svg">
 </picture>
 
-## signal
+## stack
 
-<img src="https://raw.githubusercontent.com/Dhairya2112/Dhairya2112/assets/signals.svg" alt="Signal board: the latest one-line messages left by visitors." width="840">
-
-[Post a signal](https://github.com/Dhairya2112/Dhairya2112/issues/new?template=signal.yml)
-
-One line, 72 characters, plain ASCII, no links. It appears on the board about a minute after you submit.
+```text
+languages      Python, JavaScript/TypeScript, SQL, Java
+ai / ml        PyTorch, LangGraph, LangChain, faster-whisper, Silero VAD, Kokoro TTS, CLIP ViT, scikit-learn
+backends       Django 6 (Channels / Daphne ASGI), FastAPI, Flask, REST APIs, WebSockets
+databases      PostgreSQL, MongoDB, Supabase, Redis, SQLite, MySQL
+frontend       React 19, Next.js 16, Vite 8, Three.js (R3F), Tailwind CSS v4, Zustand 5
+devops & ops   AWS (EC2), Docker, Docker Compose, Linux/Bash, Prometheus, Grafana, GitHub Actions
+```
 
 ## contact
 
 Email: [davedhairya21@gmail.com](mailto:davedhairya21@gmail.com)  
 LinkedIn: [dhairya-dave-077773340](https://www.linkedin.com/in/dhairya-dave-077773340/)  
-Resume: [PDF](resume/Dhairya_Dave_Resume.pdf)
+GitHub: [@Dhairya2112](https://github.com/Dhairya2112)  
+Resume: [PDF](resume/Dhairya_Dave_Resume_Python_Developer.pdf)

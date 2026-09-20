@@ -5,7 +5,6 @@
 from __future__ import annotations
 
 import datetime as dt
-import json
 import sys
 from pathlib import Path
 
@@ -14,10 +13,10 @@ import yaml
 
 from . import particles
 from .fetch import Stats, collect
-from .panels import hero, signals, telemetry
+from .panels import hero, telemetry
 
 ROOT = Path(__file__).resolve().parent.parent
-BUDGET = {"hero.svg": 150_000, "telemetry.svg": 60_000, "signals.svg": 60_000}
+BUDGET = {"hero.svg": 150_000, "telemetry.svg": 60_000}
 
 
 def offline_stats() -> Stats:
@@ -32,7 +31,6 @@ def offline_stats() -> Stats:
 
 def main() -> int:
     cfg = yaml.safe_load((ROOT / "data" / "config.yml").read_text(encoding="utf-8"))
-    entries = json.loads((ROOT / "data" / "signals.json").read_text(encoding="utf-8"))
     try:
         st = offline_stats() if "--offline" in sys.argv else collect(cfg)
     except requests.HTTPError as e:
@@ -46,7 +44,6 @@ def main() -> int:
     files = {
         "hero.svg": hero.build(cfg, art, style),
         "telemetry.svg": telemetry.build(cfg, st),
-        "signals.svg": signals.build(cfg, entries),
     }
     for name, svg in files.items():
         (out / name).write_text(svg, encoding="utf-8")

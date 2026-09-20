@@ -16,7 +16,7 @@ on:
 permissions:
   contents: write
 
-# One writer at a time (shared with signal.yml).
+# One writer at a time.
 concurrency:
   group: profile-render
   cancel-in-progress: false

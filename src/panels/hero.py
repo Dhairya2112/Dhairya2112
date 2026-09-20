@@ -81,13 +81,13 @@ def _particle_portrait(d: Doc, points: list[Point]) -> None:
 def build(cfg: dict, art: list, style: str = "ascii") -> str:
     h = cfg["hero"]
     pitch = h["pitch"][:3]
-    strip = h["strip"][:4]
+    strip = h["strip"]
 
+    desc = f"{h['name']}: {h['role']}, {h['status']}. " + " ".join(pitch)
     d = Doc(
         T.W, H,
-        title=f"{h['name']}, {h['role']}",
-        desc=(f"{h['name']}: {h['role']}, {h['status']}. " + " ".join(pitch) + " Setu runtime values: "
-              + ", ".join(f"{c['label']} {c['value']}" for c in strip) + "."),
+        title=f"{h['name']} — {h['role']}",
+        desc=desc,
     )
     d.frame()
 
@@ -113,12 +113,12 @@ def build(cfg: dict, art: list, style: str = "ascii") -> str:
     for i, line in enumerate(pitch):
         d.text(COL_X, 180 + i * 22, line, size=T.T_M, fill=T.PAPER, opacity=0.86)
 
-    # ---- runtime values -------------------------------------------------------
+    # ---- stack / values strip ------------------------------------------------
     d.hline(COL_X, T.W - T.PAD, 240)
-    d.text(COL_X, 262, h["strip_title"], size=T.T_XS, fill=T.MUTED)
-    cell = COL_W / 4
+    d.text(COL_X, 262, h["strip_title"].upper(), size=T.T_XS, fill=T.MUTED)
+    cell = COL_W / max(len(strip), 1)
     for i, c in enumerate(strip):
         x = COL_X + i * cell
-        d.text(x, 286, c["label"], size=T.T_XS, fill=T.MUTED)
-        d.text(x, 310, c["value"], size=T.T_XL, fill=T.AMBER, bold=True)
+        d.text(x, 286, c["label"].upper(), size=T.T_XS, fill=T.MUTED)
+        d.text(x, 308, c["value"], size=T.T_S, fill=T.AMBER, bold=True)
     return d.render()

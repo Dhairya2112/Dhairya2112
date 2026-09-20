@@ -7,19 +7,17 @@ tz_label: IST
 
 hero:
   name: Dhairya Dave
-  status: open to internships          # small line next to the amber dot
-  role: AI/ML and backend engineering  # amber line under the name
-  # Max ~57 characters per line, max 3 lines.
+  status: open to internships & engineering roles  # line next to the amber dot
+  role: Software & AI Systems Engineer              # amber line under the name
   pitch:
-    - "I train ML models on raw, messy data and build the"
-    - "Django backends that serve them. Right now I'm building"
-    - "Setu, a local-first agent that runs on a LAN."
-  strip_title: setu-workstation runtime values
-  strip:                                # exactly 4 cells; keep values short
-    - {label: vad threshold,   value: "0.35"}
-    - {label: stt logprob,    value: "-1.50"}
-    - {label: agent tools,     value: "13"}
-    - {label: llm fallback,    value: "3 layers"}
+    - "Architecting resilient backends and local-first agentic systems."
+    - "Building Setu (voice OS agent) and SignalScope (dual-brain forensics)."
+    - "Specialized in async Python, distributed pipelines, and PyTorch."
+  strip_title: core engineering stack
+  strip:
+    - {label: "ai & agents",    value: "LangGraph • PyTorch"}
+    - {label: "async backend",  value: "Django 6 • FastAPI"}
+    - {label: "cloud & data",   value: "Postgres • AWS EC2"}
 
 portrait:
   file: source/portrait.png   # cut-out PNG (transparent background); a plain JPG also works
@@ -51,8 +49,3 @@ telemetry:
     solved: 0
     total: 150
 
-signals:
-  max_chars: 72              # must fit one line in signals.svg
-  keep: 50                   # entries kept in data/signals.json
-  show: 5                    # rows drawn in the panel
-  cooldown_hours: 24         # per visitor (you are exempt)
