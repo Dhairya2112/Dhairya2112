@@ -1,0 +1,47 @@
+name: render
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  push:
+    branches: [main]
+    paths:
+      - "src/**"
+      - "source/**"
+      - "data/config.yml"
+      - "requirements.txt"
+      - ".github/workflows/render.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# One writer at a time (shared with signal.yml).
+concurrency:
+  group: profile-render
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Build panels
+        env:
+          # Optional secret GH_STATS_TOKEN adds private contribution counts.
+          GH_TOKEN: ${{ secrets.GH_STATS_TOKEN || github.token }}
+        run: python -m src.build
+
+      - name: Publish to assets branch
+        env:
+          GH_PUSH_TOKEN: ${{ github.token }}
+        run: bash src/publish.sh

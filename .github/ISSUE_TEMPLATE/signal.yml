@@ -1,0 +1,12 @@
+name: Post a signal
+description: Leave one line on the board in the README.
+title: "signal: "
+body:
+  - type: input
+    id: message
+    attributes:
+      label: Message
+      description: One line, up to 72 characters, plain ASCII, no links. Your GitHub username is shown next to it.
+      placeholder: hello from the internet
+    validations:
+      required: true

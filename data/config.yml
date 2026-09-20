@@ -1,0 +1,58 @@
+# Everything you would normally want to edit lives here.
+# Layout, colours and type scale live in src/tokens.py.
+
+user: Dhairya2112            # GitHub login (also the profile repo name)
+timezone: Asia/Kolkata       # used for "synced" and signal timestamps
+tz_label: IST
+
+hero:
+  name: Dhairya Dave
+  status: open to internships          # small line next to the amber dot
+  role: AI/ML and backend engineering  # amber line under the name
+  # Max ~57 characters per line, max 3 lines.
+  pitch:
+    - "I train ML models on raw, messy data and build the"
+    - "Django backends that serve them. Right now I'm building"
+    - "Setu, a local-first agent that runs on a LAN."
+  strip_title: setu-workstation runtime values
+  strip:                                # exactly 4 cells; keep values short
+    - {label: vad threshold,   value: "0.35"}
+    - {label: stt logprob,    value: "-1.50"}
+    - {label: agent tools,     value: "13"}
+    - {label: llm fallback,    value: "3 layers"}
+
+portrait:
+  file: source/portrait.png   # cut-out PNG (transparent background); a plain JPG also works
+  style: ascii                # ascii | particles
+  ascii:
+    font_size: 6              # smaller = more detail, tinier text
+    ramp: " .:-=+*#%@"        # dark to bright
+    gamma: 0.8                # <1 brightens midtones
+  zoom: 2.5                   # 1 = whole photo, 2 = half the width (closer on the face)
+  focus_x: 0.57               # slide the crop window: 0 = left edge, 1 = right edge
+  focus_y: 0.253              # 0 = top, 1 = bottom
+  fade_from: 0.80             # fade the lower part of the crop so the face leads (remove to disable)
+  equalize: 0.5               # 0..1, spreads mid-tones so skin, hair and glasses separate
+  detail: 0.8                 # local contrast boost, 0 = off
+  floor: 0.16                 # minimum density for dark parts of you (hair, black shirt)
+  vignette: false             # radial fade; only useful for JPGs with a busy backdrop
+  invert: false               # flip the shading if your face reads inverted
+  points: 1200                # particles style only
+  mode: auto                  # JPG only: auto | subject | luminance
+
+telemetry:
+  weeks: 12
+  languages:
+    top: 5
+    exclude: ["Jupyter Notebook"]   # notebook outputs inflate byte counts
+  sprint:                           # optional DSA counter, edit by hand
+    enabled: false
+    label: dsa sprint
+    solved: 0
+    total: 150
+
+signals:
+  max_chars: 72              # must fit one line in signals.svg
+  keep: 50                   # entries kept in data/signals.json
+  show: 5                    # rows drawn in the panel
+  cooldown_hours: 24         # per visitor (you are exempt)

@@ -1,8 +1,13 @@
 name: Generate Snake
+
 on:
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
+
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -10,9 +15,12 @@ jobs:
       - uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
+          # Same file names as before, so nothing else needs to change.
+          # Dark variant uses the control-room palette; light variant keeps snk's default dots.
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake.svg?color_snake=#B7791F
+            dist/github-contribution-grid-snake-dark.svg?color_snake=#F5A623&color_dots=#161b22,#2b3442,#4a5566,#8b93a0,#e8e6e1
+
       - uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output

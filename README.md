@@ -1,125 +1,107 @@
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1E0B33,50:6D28D9,100:A855F7&height=250&section=header&text=Dhairya%20Dave&fontSize=54&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Software%20%26%20AI%20Engineer&descAlignY=55&descSize=18"/>
+<img src="https://raw.githubusercontent.com/Dhairya2112/Dhairya2112/assets/hero.svg" alt="Dhairya Dave, AI/ML and backend engineering, open to internships. I train ML models on raw, messy data and build the Django backends that serve them. Right now I'm building Setu, a local-first agent that runs on a LAN. Setu runtime values: VAD threshold 0.35, STT logprob -1.50, 13 agent tools, 3 LLM fallback layers." width="840">
 
-<a href="https://git.io/typing-svg">
-<img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=20&duration=3000&pause=800&color=A855F7&center=true&vCenter=true&width=650&lines=Building+local-first+AI+automation+systems;Full-Stack+Architectures+%7C+Flask+%26+Java;CSE+%2740+Student+%40+L.J.+University;Architecting+Setu+%26+FinVest" alt="Typing SVG" />
-</a>
-<br/>
-<a href="https://www.linkedin.com/in/dhairya-dave-077773340/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-<a href="https://github.com/Dhairya2112"><img src="https://img.shields.io/badge/GitHub-1E0B33?style=for-the-badge&logo=github&logoColor=A855F7"/></a>
-</div>
+Third-year CSE student at L.J. University, Ahmedabad, graduating 2028.
 
-<br/>
+<sub>[systems](#systems)&emsp;[telemetry](#telemetry)&emsp;[signal](#signal)&emsp;[contact](#contact)</sub>
 
-<!-- WINDOW 1: ABOUT & SYSTEM SPECS -->
-<table width="100%" cellspacing="0" cellpadding="0" style="border-collapse: collapse; border: 1px solid #30363d;">
-<tr>
-<td bgcolor="#161b22" style="padding: 8px 12px; border-bottom: 1px solid #30363d;">
-🔴 🟡 🟢 &nbsp;&nbsp;<b style="color: #8b949e; font-family: sans-serif; font-size: 14px;">System_Preferences.app</b>
-</td>
-</tr>
-<tr>
-<td style="padding: 20px;">
-<table width="100%">
-<tr>
-<td width="55%" valign="top">
-<h3>👤 User Profile</h3>
-<ul>
-<li><b>Role:</b> Software & AI Engineer</li>
-<li><b>Base:</b> Ahmedabad, Gujarat, IN</li>
-<li><b>Education:</b> B.Tech CSE, L.J. University (Class of '28)</li>
-<li><b>Focus:</b> Backend systems, Applied Algorithms, Relational DBs</li>
-</ul>
-</td>
-<td width="45%" valign="top" align="center">
-<h3>⚙️ Core Frameworks</h3>
-<img src="https://skillicons.dev/icons?i=python,java,pytorch,flask,django,react,js,mysql,postgres,git&theme=dark&perline=5" />
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
+## systems
 
-<br/>
+<details open>
+<summary><b>setu-workstation</b>&emsp;local-first, LAN-only AI automation agent</summary>
 
-<!-- WINDOW 2: PROJECT DASHBOARD -->
-<table width="100%" cellspacing="0" cellpadding="0" style="border-collapse: collapse; border: 1px solid #30363d;">
-<tr>
-<td bgcolor="#161b22" style="padding: 8px 12px; border-bottom: 1px solid #30363d;">
-🔴 🟡 🟢 &nbsp;&nbsp;<b style="color: #8b949e; font-family: sans-serif; font-size: 14px;">Project_Explorer.exe</b>
-</td>
-</tr>
-<tr>
-<td style="padding: 20px;">
+<br>
 
-<!-- App Card: Setu -->
-<blockquote>
-<h3>🧠 Setu Workstation</h3>
-<p>
-<kbd>Local-First AI OS</kbd> <kbd>ReAct + LangGraph</kbd> <kbd>Llama-3.3-70B</kbd>
-</p>
-<p><i>A stateful ReAct agent orchestrating 19 integrated tools to control the host machine and browser.</i></p>
-<ul>
-<li><b>Self-Healing Loop:</b> Terminal errors are caught, diagnosed, and retried autonomously.</li>
-<li><b>Custom Pipeline:</b> Built with faster-whisper (large-v3-turbo) STT, VAD, and a 3-layer LLM fallback system.</li>
-</ul>
-</blockquote>
+```text
+mic ─► Silero VAD ─► faster-whisper large-v3-turbo (int8, CPU)
+                     English + Hindi/Hinglish, wake word "setu"
+                                     │
+        tier 0   regex router                <0.3 s   greetings, thanks, farewells
+        tier 2   LangGraph ReAct agent       2-8 s    13 tools + Playwright browser sub-agent
+                                     │
+        LLM chain   Gemini 10 s ─► OpenRouter 6 s ─► NVIDIA NIM 5 s
+                                     │
+Kokoro TTS, local ─► base64 WAV chunks, streamed sentence by sentence
+                                     │
+Django 6 + Channels (Daphne, JWT WebSocket) ─► React 19 and Three.js client
+```
 
-<!-- App Card: FinVest -->
-<blockquote>
-<h3>💰 FinVest Platform</h3>
-<p>
-<kbd>Flask 2.3.2</kbd> <kbd>MySQL 8.0+</kbd> <kbd>Matplotlib / NumPy</kbd>
-</p>
-<p><i>A comprehensive financial management, event-based budgeting, and portfolio tracking platform.</i></p>
-<ul>
-<li><b>Portfolio & Budgets:</b> Track investments across assets with real-time P&L. Features isolated event budgets and category limits.</li>
-<li><b>Analytics Dashboard:</b> Modern Glassmorphism UI rendering dynamic charts, growth trends, and risk analysis.</li>
-</ul>
-</blockquote>
+- Runs on the local network only. Three permission levels gate the tools, and a safety layer blocks destructive shell patterns and restricts file paths.
+- Tokens stream to the client, the desktop can cancel a reply mid-stream, and several devices stay in sync. A phone disconnecting does not cancel a running task.
+- Speech settings: VAD threshold 0.35, minimum speech 200 ms, minimum silence 400 ms, logprob gate -1.50, beam size 5.
 
-<!-- App Card: Hotel Management -->
-<blockquote>
-<h3>🏨 Hotel Management System</h3>
-<p>
-<kbd>Core Java</kbd> <kbd>PostgreSQL</kbd> <kbd>JDBC</kbd> <kbd>Applied DSA</kbd>
-</p>
-<p><i>An OOP-driven hospitality platform managing records, live room allocations, and automated billing.</i></p>
-<ul>
-<li><b>Algorithmic Ops:</b> Utilizes custom sorting [O(n log n)] and searching algorithms over ArrayLists for real-time menu and guest operations.</li>
-<li><b>Database Architecture:</b> Relational PostgreSQL schema with strictly enforced constraints and SQL routines.</li>
-</ul>
-</blockquote>
+<!-- add the repository link here once it is public -->
 
-</td>
-</tr>
-</table>
+</details>
 
-<br/>
+<details>
+<summary><b>finvest-v2</b>&emsp;personal finance platform, deployed</summary>
 
-<!-- WINDOW 3: ACTIVITY MONITOR -->
-<table width="100%" cellspacing="0" cellpadding="0" style="border-collapse: collapse; border: 1px solid #30363d;">
-<tr>
-<td bgcolor="#161b22" style="padding: 8px 12px; border-bottom: 1px solid #30363d;">
-🔴 🟡 🟢 &nbsp;&nbsp;<b style="color: #8b949e; font-family: sans-serif; font-size: 14px;">Activity_Monitor.app</b>
-</td>
-</tr>
-<tr>
-<td align="center" style="padding: 20px;">
+<br>
+
+Next.js 16 and React 19 front end, Flask and Supabase (PostgreSQL) back end. Google OAuth 2.0 sign-in, a receipt splitter that reads photos with Gemini Vision OCR, live multi-currency exchange rates, and PWA support.
+
+[source](https://github.com/Dhairya2112/FinVest-Financial-Buddy)&emsp;[live](https://finvest-financial-buddy.vercel.app)
+
+</details>
+
+<details>
+<summary><b>signalscope</b>&emsp;forensic detector for AI-generated images and deepfakes</summary>
+
+<br>
+
+Two detectors run side by side and a consensus gate makes the call. One uses CLIP ViT-B/16 to catch semantic and visual inconsistencies. The other reads camera physics: 2D-FFT azimuthal power decay and SRM sensor-noise residuals. The gate suppresses false positives from smartphone portrait mode, night mode and beauty filters, and every verdict carries a calibrated confidence tier. FastAPI back end, React 18 dashboard.
+
+Built for Smart India Hackathon 2026. 8th of 108 teams in the college round.
+
+<!-- add the repository link here -->
+
+</details>
+
+<details>
+<summary><b>archive</b>&emsp;earlier work</summary>
+
+<br>
+
+Hotel and cafe management system in Java, PostgreSQL and JDBC, with hand-written sorting and searching algorithms.
+
+</details>
+
+<details>
+<summary><b>stack</b>&emsp;what I use, and what I am still learning</summary>
+
+<br>
+
+```text
+languages  Python, JavaScript, SQL, Java
+back end   Django, DRF, Flask, FastAPI, Express
+front end  React, Next.js, Vite, Tailwind CSS
+ml         PyTorch, scikit-learn, pandas, NumPy, LangChain, LangGraph
+data       PostgreSQL, MySQL, MongoDB, Supabase
+learning   Docker, AWS, GCP
+```
+
+</details>
+
+## telemetry
+
+<img src="https://raw.githubusercontent.com/Dhairya2112/Dhairya2112/assets/telemetry.svg" alt="GitHub activity for the last 12 weeks, language share by bytes, and repository counts. Regenerated every six hours from the GitHub API." width="840">
+
 <picture>
-<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Dhairya2112/Dhairya2112/output/github-contribution-grid-snake-dark.svg">
-<source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Dhairya2112/Dhairya2112/output/github-contribution-grid-snake.svg">
-<img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/Dhairya2112/Dhairya2112/output/github-contribution-grid-snake.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Dhairya2112/Dhairya2112/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Dhairya2112/Dhairya2112/output/github-contribution-grid-snake.svg">
+  <img alt="Contribution graph with a snake eating the commits" src="https://raw.githubusercontent.com/Dhairya2112/Dhairya2112/output/github-contribution-grid-snake-dark.svg">
 </picture>
-</td>
-</tr>
-</table>
 
-<br/>
+## signal
 
-<div align="center">
-<i>Building in public, targeting Software & AI engineering roles.<br/>Always down to talk system architecture, relational databases, or a Clash Royale meta debate. 👑</i>
-<br/><br/>
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:A855F7,100:1E0B33&height=100&section=footer"/>
-</div>
+<img src="https://raw.githubusercontent.com/Dhairya2112/Dhairya2112/assets/signals.svg" alt="Signal board: the latest one-line messages left by visitors." width="840">
+
+[Post a signal](https://github.com/Dhairya2112/Dhairya2112/issues/new?template=signal.yml)
+
+One line, 72 characters, plain ASCII, no links. It appears on the board about a minute after you submit.
+
+## contact
+
+Email: [davedhairya21@gmail.com](mailto:davedhairya21@gmail.com)  
+LinkedIn: [dhairya-dave-077773340](https://www.linkedin.com/in/dhairya-dave-077773340/)  
+Resume: [PDF](resume/Dhairya_Dave_Resume.pdf)
