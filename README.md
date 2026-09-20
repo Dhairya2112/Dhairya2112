@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/Dhairya2112/Dhairya2112/assets/hero.svg" alt="Dhairya Dave, Software & AI Systems Engineer. Architecting resilient backends and local-first agentic systems. Core stack: LangGraph, PyTorch, Django 6, FastAPI, Postgres, AWS." width="840">
+<img src="https://raw.githubusercontent.com/Dhairya2112/Dhairya2112/assets/hero.svg" alt="Dhairya Dave, Software & AI Systems Engineer. Architecting resilient backends and local-first agentic systems. Core stack: LangGraph, PyTorch, Django 6, FastAPI, PostgreSQL." width="840">
 
 Third-year CSE student at L.J. University, Ahmedabad (Class of '28) • Targeting AI & Backend Engineering Roles
 
@@ -47,10 +47,10 @@ A full-stack forensic inspection laboratory built to detect AI-generated images,
 - **Smartphone Computational Shield:** Autonomous gating model that isolates and suppresses false positives induced by modern smartphone computational photography (portrait mode blur, night mode, aggressive multi-frame HDR).
 - **Four-Panel Forensic Laboratory:** LayerCAM visual saliency heatmaps with dynamic alpha blend slider, 2D-FFT azimuthal profile plots, generator family attribution (Midjourney, Stable Diffusion, DALL-E, StyleGAN), and EXIF camera provenance extraction.
 - **Natural Language Diagnostics:** Real-time dynamic diagnostic summaries generated via the summary engine for non-technical evaluators and court admissibility.
-- **Production & Observability:** FastAPI backend, React 18 + Vite dashboard, Docker Compose multi-container deployment, Prometheus latency telemetry, and a 42-case automated test suite (`pytest`).
+- **Production & Testing:** FastAPI backend, React 18 + Vite dashboard, automated testing pipeline, and a 42-case test suite (`pytest`).
 - **Recognition:** Smart India Hackathon (SIH 2026) Institutional Finalist — ranked 8th of 108 teams in college evaluation.
 
-[live demo (AWS EC2)](http://18.212.83.78:8000)&emsp;[source](https://github.com/Dhairya2112/SignalScope)
+[live demo](http://18.212.83.78:8000)&emsp;[source](https://github.com/Dhairya2112/SignalScope)
 
 </details>
 
@@ -85,7 +85,7 @@ Live production deployments and active systems engineered by Dhairya Dave:
 
 | System | Architecture / Focus | Primary Stack | Environment | Status | Links |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **SignalScope** | Dual-Brain Forensic Vision (CLIP + 2D-FFT + SRM) | FastAPI • PyTorch • React 18 • Docker | AWS EC2 (US-East) | `● Live Demo` | [Live App](http://18.212.83.78:8000) • [Code](https://github.com/Dhairya2112/SignalScope) |
+| **SignalScope** | Dual-Brain Forensic Vision (CLIP + 2D-FFT + SRM) | FastAPI • PyTorch • React 18 | Cloud Production | `● Live Demo` | [Live App](http://18.212.83.78:8000) • [Code](https://github.com/Dhairya2112/SignalScope) |
 | **FinVest** | Automated Ledger & Vision OCR Expense Splitter | Flask • Next.js 16 • Supabase • Postgres | Vercel Serverless | `● Live Production` | [Live App](https://finvest-financial-buddy.vercel.app) • [Code](https://github.com/Dhairya2112/FinVest-Financial-Buddy) |
 | **Setu Workstation** | Local-First Autonomous Voice OS Agent | Django 6 Channels • LangGraph • Whisper | Local-First Host (LAN) | `○ Workstation Active` | [Architecture](#systems) |
 
@@ -107,9 +107,9 @@ Live production deployments and active systems engineered by Dhairya Dave:
 languages      Python, JavaScript/TypeScript, SQL, Java
 ai / ml        PyTorch, LangGraph, LangChain, faster-whisper, Silero VAD, Kokoro TTS, CLIP ViT, scikit-learn
 backends       Django 6 (Channels / Daphne ASGI), FastAPI, Flask, REST APIs, WebSockets
-databases      PostgreSQL, MongoDB, Supabase, Redis, SQLite, MySQL
+databases      PostgreSQL, MongoDB, Supabase, SQLite, MySQL
 frontend       React 19, Next.js 16, Vite 8, Three.js (R3F), Tailwind CSS v4, Zustand 5
-devops & ops   AWS (EC2), Docker, Docker Compose, Linux/Bash, Prometheus, Grafana, GitHub Actions
+tooling & ops  Git, GitHub Actions, Linux/Bash, Postman, CI/CD
 ```
 
 ## contact

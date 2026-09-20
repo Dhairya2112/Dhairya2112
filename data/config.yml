@@ -17,8 +17,8 @@ hero:
   stack_grid:
     - { category: "AI & AGENTIC SYSTEMS", items: "PyTorch • LangGraph • Whisper" }
     - { category: "DISTRIBUTED BACKEND", items: "Django 6 • FastAPI • Daphne" }
-    - { category: "DATA & PERSISTENCE", items: "PostgreSQL • MongoDB • Redis" }
-    - { category: "CLOUD & INFRASTRUCTURE", items: "AWS EC2 • Docker • Linux" }
+    - { category: "DATA & PERSISTENCE", items: "PostgreSQL • MongoDB • Supabase" }
+    - { category: "FRONTEND & CLIENT", items: "React 19 • MERN • Vite" }
 
 portrait:
   file: source/portrait.png   # cut-out PNG (transparent background); a plain JPG also works

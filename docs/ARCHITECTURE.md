@@ -19,7 +19,7 @@ L1  hero.svg        840x328, generated
     +-----------------+  ai & agents | async backend | cloud & data
 L2  plain text      education, role targets, anchor navigation
 L3  systems         <details> rows: setu-workstation (open), signalscope, finvest-v2, archive
-L4  deployments     markdown table: live AWS EC2, Vercel, and local systems
+L4  deployments     markdown table: live cloud demos, Vercel, and local systems
 L5  telemetry.svg   840x216, rebuilt every 6 h
     cadence (12 wk with avg baseline) | languages by bytes (stacked bar + chips) | systems metrics
     github-contribution-grid-snake*.svg   from snake.yml, `output` branch
