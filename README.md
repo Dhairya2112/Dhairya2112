@@ -117,4 +117,4 @@ tooling & ops  Git, GitHub Actions, Linux/Bash, Postman, CI/CD
 Email: [davedhairya21@gmail.com](mailto:davedhairya21@gmail.com)  
 LinkedIn: [dhairya-dave-077773340](https://www.linkedin.com/in/dhairya-dave-077773340/)  
 GitHub: [@Dhairya2112](https://github.com/Dhairya2112)  
-Resume: [PDF](resume/Dhairya_Dave_Resume_Python_Developer.pdf)
+Resume: [PDF](resume/Dhairya_Dave_Resume_AI_ML(1).pdf)
